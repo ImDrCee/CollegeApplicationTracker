@@ -1,0 +1,26 @@
+{
+  "meta": {
+    "owner": "ImDrCee",
+    "targetPlan": "Early Decision / Early Action",
+    "targetDeadline": "2026-11-01",
+    "lastUpdated": "2026-09-28"
+  },
+  "universities": [],
+  "recommenders": [
+    { "name": "", "role": "School Counselor", "schools": "All schools", "method": "Common App", "requestSent": false, "materialsGiven": false, "reminderDate": "", "submitted": false, "thankYouSent": false, "notes": "Core academic letter" },
+    { "name": "", "role": "Teacher", "schools": "All schools", "method": "Common App", "requestSent": false, "materialsGiven": false, "reminderDate": "", "submitted": false, "thankYouSent": false, "notes": "Pick a subject relevant to your major" },
+    { "name": "", "role": "VC", "schools": "", "method": "Other recommender", "requestSent": false, "materialsGiven": false, "reminderDate": "", "submitted": false, "thankYouSent": false, "notes": "Check per-school extra-letter policy" },
+    { "name": "", "role": "Intern Manager", "schools": "", "method": "Other recommender", "requestSent": false, "materialsGiven": false, "reminderDate": "", "submitted": false, "thankYouSent": false, "notes": "Highlights real-world skills" },
+    { "name": "", "role": "Research Advisor", "schools": "", "method": "Other recommender", "requestSent": false, "materialsGiven": false, "reminderDate": "", "submitted": false, "thankYouSent": false, "notes": "Best for research-heavy programs" }
+  ],
+  "essays": [
+    { "essay": "Personal Statement", "school": "All (Common App)", "prompt": "Common App main essay", "wordLimit": 650, "status": "Not started", "due": "2026-10-15", "notes": "Rough draft first, then revise across passes" }
+  ],
+  "weeklyPlan": [
+    { "week": "Week 1: Sep 28 – Oct 4", "focus": "Requests + shortlist", "tasks": "Send all 5 recommender requests with materials. Draft Reach/Target/Safety list.", "done": false },
+    { "week": "Week 2: Oct 5 – 11", "focus": "Lock list + Common App", "tasks": "Finalize schools & ED choice. Fill profile, activities, honors, testing.", "done": false },
+    { "week": "Week 3: Oct 12 – 18", "focus": "Essay draft", "tasks": "Rough personal-statement draft by ~Oct 15. Start supplements. Nudge recommenders.", "done": false },
+    { "week": "Week 4: Oct 19 – 25", "focus": "Revise", "tasks": "Revise personal statement across passes. Finish supplements. Confirm letters in.", "done": false },
+    { "week": "Week 5: Oct 26 – 31", "focus": "Review + submit", "tasks": "Proofread everything. Submit with buffer before Nov 1. Send thank-you notes.", "done": false }
+  ]
+}
