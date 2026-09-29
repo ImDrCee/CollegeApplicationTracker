@@ -3,24 +3,606 @@
     "owner": "ImDrCee",
     "targetPlan": "Early Decision / Early Action",
     "targetDeadline": "2026-11-01",
-    "lastUpdated": "2026-09-28"
+    "lastUpdated": "2026-09-29",
+    "strategy": "STRATEGY (full-pay = ED carries zero financial risk): ED I -> UPenn M&T (biggest boost). ED II -> NYU if ED I unsuccessful. Non-binding EA everywhere allowed (MIT, Caltech, UChicago, GT, UIUC, Michigan, USC, Northeastern, Purdue, Wisconsin, Ohio State). REA schools (Stanford/Harvard/Princeton) conflict with ED -> kept RD. UC & CSU due Nov 30 (test-blind, no LoRs). Deadlines are typical 2026-27 - VERIFY each. Green=CDS-verified, Amber=approx.",
+    "balance": "11 Reach - 13 Target - 6 Safety | 6 UCs + 2 CSUs (test-blind) | ED I: UPenn, ED II: NYU",
+    "topAction": "Retake SAT toward 1500+ (lifts every test-required reach); UCs/CSUs ignore it (test-blind)."
   },
-  "universities": [],
+  "universities": [
+    {
+      "n": 1,
+      "tier": "Reach",
+      "university": "MIT",
+      "program": "EECS (6-3)",
+      "plan": "EA (non-binding)",
+      "deadline": "Nov 1, 2026",
+      "admit": "4.6%",
+      "sat": "1520-1580",
+      "coa": "$89,340",
+      "data": "Verified",
+      "notes": "Top reach; EA free upside; submit Math 750",
+      "status": "Not started"
+    },
+    {
+      "n": 2,
+      "tier": "Reach",
+      "university": "Stanford",
+      "program": "CS / Symbolic Systems",
+      "plan": "RD",
+      "deadline": "Jan 5, 2027",
+      "admit": "~3.7%",
+      "sat": "1500-1570",
+      "coa": "~$92k",
+      "data": "Approx",
+      "notes": "REA would block your ED - go RD",
+      "status": "Not started"
+    },
+    {
+      "n": 3,
+      "tier": "Reach",
+      "university": "Caltech",
+      "program": "CS",
+      "plan": "EA (non-restrictive)",
+      "deadline": "Nov 1, 2026",
+      "admit": "~3%",
+      "sat": "1530-1580",
+      "coa": "~$90k",
+      "data": "Approx",
+      "notes": "Quant-heavy; EA free upside",
+      "status": "Not started"
+    },
+    {
+      "n": 4,
+      "tier": "Reach",
+      "university": "Princeton",
+      "program": "ORFE",
+      "plan": "RD",
+      "deadline": "Jan 1, 2027",
+      "admit": "~4.5%",
+      "sat": "1500-1570",
+      "coa": "~$90k",
+      "data": "Approx",
+      "notes": "ORFE=AIxfinance fit; RD (REA blocks ED)",
+      "status": "Not started"
+    },
+    {
+      "n": 5,
+      "tier": "Reach",
+      "university": "Harvard",
+      "program": "CS + Econ",
+      "plan": "RD",
+      "deadline": "Jan 1, 2027",
+      "admit": "~3.4%",
+      "sat": "1500-1580",
+      "coa": "~$88k",
+      "data": "Approx",
+      "notes": "Test-required; must submit; RD",
+      "status": "Not started"
+    },
+    {
+      "n": 6,
+      "tier": "Reach",
+      "university": "UPenn",
+      "program": "M&T (Wharton+SEAS)",
+      "plan": "ED I (binding)",
+      "deadline": "Nov 1, 2026",
+      "admit": "4.24%",
+      "sat": "1510-1560",
+      "coa": "~$92k",
+      "data": "Verified",
+      "notes": "PRIMARY ED - biggest boost, zero $ risk",
+      "status": "Not started"
+    },
+    {
+      "n": 7,
+      "tier": "Reach",
+      "university": "Columbia",
+      "program": "CS + Econ",
+      "plan": "RD",
+      "deadline": "Jan 1, 2027",
+      "admit": "~3.9%",
+      "sat": "1510-1560",
+      "coa": "~$93k",
+      "data": "Approx",
+      "notes": "NYC quant; RD",
+      "status": "Not started"
+    },
+    {
+      "n": 8,
+      "tier": "Reach",
+      "university": "Cornell",
+      "program": "ORIE / CS",
+      "plan": "RD (ED alt)",
+      "deadline": "Jan 2, 2027",
+      "admit": "8.4%",
+      "sat": "1500-1570",
+      "coa": "~$90k",
+      "data": "Verified",
+      "notes": "Most attainable Ivy; ED alternative",
+      "status": "Not started"
+    },
+    {
+      "n": 9,
+      "tier": "Reach",
+      "university": "UChicago",
+      "program": "Econ + CS",
+      "plan": "EA (non-binding)",
+      "deadline": "Nov 1, 2026",
+      "admit": "~5.4%",
+      "sat": "1510-1570",
+      "coa": "~$92k",
+      "data": "Approx",
+      "notes": "TO-friendly, loves spikes; EA free upside",
+      "status": "Not started"
+    },
+    {
+      "n": 10,
+      "tier": "Reach",
+      "university": "UC Berkeley",
+      "program": "EECS / M.E.T.",
+      "plan": "UC app",
+      "deadline": "Nov 30, 2026",
+      "admit": "~11% (EECS ~4%)",
+      "sat": "Test-blind",
+      "coa": "~$72k OOS",
+      "data": "Approx",
+      "notes": "Best top shot; 1410 ignored (test-blind)",
+      "status": "Not started"
+    },
+    {
+      "n": 11,
+      "tier": "Reach",
+      "university": "UCLA",
+      "program": "CS",
+      "plan": "UC app",
+      "deadline": "Nov 30, 2026",
+      "admit": "~9%",
+      "sat": "Test-blind",
+      "coa": "~$72k OOS",
+      "data": "Approx",
+      "notes": "Test-blind; impacted CS, strong holistic",
+      "status": "Not started"
+    },
+    {
+      "n": 12,
+      "tier": "Target",
+      "university": "CMU",
+      "program": "SCS / CS+Business",
+      "plan": "RD (ED if retake)",
+      "deadline": "Jan 3, 2027",
+      "admit": "SCS ~5-7%",
+      "sat": "1500-1560",
+      "coa": "~$85k",
+      "data": "Approx",
+      "notes": "#1 for AI; score-sensitive -> retake helps",
+      "status": "Not started"
+    },
+    {
+      "n": 13,
+      "tier": "Target",
+      "university": "Georgia Tech",
+      "program": "CS / Quant&Comp Finance",
+      "plan": "EA",
+      "deadline": "Oct 15, 2026",
+      "admit": "~16% (CS lower)",
+      "sat": "1400-1550",
+      "coa": "~$52k OOS",
+      "data": "Approx",
+      "notes": "Elite CS value; test-required -> submit",
+      "status": "Not started"
+    },
+    {
+      "n": 14,
+      "tier": "Target",
+      "university": "UIUC",
+      "program": "CS+Econ / CS+X",
+      "plan": "EA",
+      "deadline": "Nov 1, 2026",
+      "admit": "~44% (CS ~7%)",
+      "sat": "1350-1520",
+      "coa": "~$52k OOS",
+      "data": "Approx",
+      "notes": "CS+X backdoor to top-5 CS",
+      "status": "Not started"
+    },
+    {
+      "n": 15,
+      "tier": "Target",
+      "university": "U Michigan",
+      "program": "CS",
+      "plan": "EA",
+      "deadline": "Nov 1, 2026",
+      "admit": "~18%",
+      "sat": "1350-1530",
+      "coa": "~$74k OOS",
+      "data": "Approx",
+      "notes": "EA boost; builder-friendly",
+      "status": "Not started"
+    },
+    {
+      "n": 16,
+      "tier": "Target",
+      "university": "USC",
+      "program": "CS / Iovine & Young",
+      "plan": "EA (scholarship)",
+      "deadline": "Nov 1, 2026",
+      "admit": "~10%",
+      "sat": "1450-1540",
+      "coa": "~$95k",
+      "data": "Approx",
+      "notes": "I&Y innovation fit + big merit",
+      "status": "Not started"
+    },
+    {
+      "n": 17,
+      "tier": "Target",
+      "university": "NYU",
+      "program": "Business + CS (Stern x Tandon)",
+      "plan": "ED II (binding)",
+      "deadline": "Jan 1, 2027",
+      "admit": "~9-12%",
+      "sat": "1450-1560",
+      "coa": "~$93k",
+      "data": "Approx",
+      "notes": "ED II - need-aware, full-pay edge; exact fit",
+      "status": "Not started"
+    },
+    {
+      "n": 18,
+      "tier": "Target",
+      "university": "Northeastern",
+      "program": "CS (co-op)",
+      "plan": "EA",
+      "deadline": "Nov 1, 2026",
+      "admit": "~5-7%",
+      "sat": "1460-1550",
+      "coa": "~$90k",
+      "data": "Approx",
+      "notes": "Co-op rewards internships; full-pay edge",
+      "status": "Not started"
+    },
+    {
+      "n": 19,
+      "tier": "Target",
+      "university": "UC San Diego",
+      "program": "CS / Data Science",
+      "plan": "UC app",
+      "deadline": "Nov 30, 2026",
+      "admit": "~25%",
+      "sat": "Test-blind",
+      "coa": "~$72k OOS",
+      "data": "Approx",
+      "notes": "Test-blind; strong CS, better odds",
+      "status": "Not started"
+    },
+    {
+      "n": 20,
+      "tier": "Target",
+      "university": "UC Davis",
+      "program": "CS",
+      "plan": "UC app",
+      "deadline": "Nov 30, 2026",
+      "admit": "~37%",
+      "sat": "Test-blind",
+      "coa": "~$71k OOS",
+      "data": "Approx",
+      "notes": "Test-blind anchor",
+      "status": "Not started"
+    },
+    {
+      "n": 21,
+      "tier": "Target",
+      "university": "UC Irvine",
+      "program": "CS",
+      "plan": "UC app",
+      "deadline": "Nov 30, 2026",
+      "admit": "~26%",
+      "sat": "Test-blind",
+      "coa": "~$71k OOS",
+      "data": "Approx",
+      "notes": "Test-blind; strong ICS",
+      "status": "Not started"
+    },
+    {
+      "n": 22,
+      "tier": "Target",
+      "university": "UC Santa Barbara",
+      "program": "CS",
+      "plan": "UC app",
+      "deadline": "Nov 30, 2026",
+      "admit": "~26%",
+      "sat": "Test-blind",
+      "coa": "~$71k OOS",
+      "data": "Approx",
+      "notes": "Test-blind; solid CS",
+      "status": "Not started"
+    },
+    {
+      "n": 23,
+      "tier": "Target",
+      "university": "Cal Poly SLO",
+      "program": "CS",
+      "plan": "Cal State Apply",
+      "deadline": "Nov 30, 2026",
+      "admit": "~28% (CS lower)",
+      "sat": "Test-blind",
+      "coa": "~$46k OOS",
+      "data": "Approx",
+      "notes": "Most selective CSU; hands-on CS",
+      "status": "Not started"
+    },
+    {
+      "n": 24,
+      "tier": "Target",
+      "university": "UW-Seattle",
+      "program": "CS (Allen)",
+      "plan": "RD",
+      "deadline": "Nov 15, 2026",
+      "admit": "~40% (CS low)",
+      "sat": "1350-1520",
+      "coa": "~$62k OOS",
+      "data": "Approx",
+      "notes": "Strong CS; direct-admit competitive",
+      "status": "Not started"
+    },
+    {
+      "n": 25,
+      "tier": "Safety",
+      "university": "Purdue",
+      "program": "CS",
+      "plan": "EA",
+      "deadline": "Nov 1, 2026",
+      "admit": "~50% (CS lower)",
+      "sat": "1270-1470",
+      "coa": "~$50k OOS",
+      "data": "Approx",
+      "notes": "Elite CS value + merit",
+      "status": "Not started"
+    },
+    {
+      "n": 26,
+      "tier": "Safety",
+      "university": "Wisconsin",
+      "program": "CS",
+      "plan": "EA",
+      "deadline": "Nov 1, 2026",
+      "admit": "~43%",
+      "sat": "1370-1500",
+      "coa": "~$60k OOS",
+      "data": "Approx",
+      "notes": "Reliable strong-CS anchor; test-required",
+      "status": "Not started"
+    },
+    {
+      "n": 27,
+      "tier": "Safety",
+      "university": "Ohio State (Honors)",
+      "program": "CS",
+      "plan": "EA (scholarship)",
+      "deadline": "Nov 1, 2026",
+      "admit": "~53%",
+      "sat": "1270-1460",
+      "coa": "~$50k OOS",
+      "data": "Approx",
+      "notes": "Honors + merit; likely admit",
+      "status": "Not started"
+    },
+    {
+      "n": 28,
+      "tier": "Safety",
+      "university": "San Jose State",
+      "program": "CS",
+      "plan": "Cal State Apply",
+      "deadline": "Nov 30, 2026",
+      "admit": "~77% (CS impacted)",
+      "sat": "Test-blind",
+      "coa": "~$46k OOS",
+      "data": "Approx",
+      "notes": "Silicon Valley pipeline; test-blind",
+      "status": "Not started"
+    },
+    {
+      "n": 29,
+      "tier": "Safety",
+      "university": "ASU (Barrett)",
+      "program": "CS",
+      "plan": "Rolling",
+      "deadline": "ASAP (rolling)",
+      "admit": "~90%",
+      "sat": "Test-optional",
+      "coa": "~$45k OOS",
+      "data": "Approx",
+      "notes": "Safety + big merit; apply early",
+      "status": "Not started"
+    },
+    {
+      "n": 30,
+      "tier": "Safety",
+      "university": "U Alabama",
+      "program": "CS",
+      "plan": "Rolling",
+      "deadline": "ASAP (rolling)",
+      "admit": "~80%",
+      "sat": "Submit SAT (auto)",
+      "coa": "~$45k OOS",
+      "data": "Approx",
+      "notes": "Auto-scholarship for your stats; true safety",
+      "status": "Not started"
+    }
+  ],
+  "legend": [
+    {
+      "key": "Data (Shortlist)",
+      "meaning": "Verified = confirmed from official 2025-26 source (green). Approx = planning estimate (amber) - verify CDS."
+    },
+    {
+      "key": "Verified so far",
+      "meaning": "MIT 4.6% admit / COA $89,340; UPenn 4.24% / SAT 1510-1560; Cornell 8.4% / SAT ~1500-1570."
+    },
+    {
+      "key": "Your Odds",
+      "meaning": "Personalized admit-chance estimate (approx, not a guarantee)."
+    },
+    {
+      "key": "Adviser Score",
+      "meaning": "Internal 0-100 fit/strength score (higher = better)."
+    },
+    {
+      "key": "Admit %",
+      "meaning": "Approx overall admit rate (CDS). Impacted CS majors are often much lower."
+    },
+    {
+      "key": "Mid-50 SAT",
+      "meaning": "Approx middle-50% total SAT. 'Blind' = test-blind (SAT not used)."
+    },
+    {
+      "key": "Test Policy",
+      "meaning": "Req=required; Opt=test-optional; Blind=test-blind."
+    },
+    {
+      "key": "CDS Key Factors",
+      "meaning": "CDS C7 'very important': R=rigor, G=GPA, Rk=rank, T=tests, E=essay, Rec=recs, EC=activities, C=character, Tal=talent."
+    },
+    {
+      "key": "Need (You)",
+      "meaning": "US citizen: NB=need-blind (full-pay neutral); NA=need-aware (full-pay helps)."
+    },
+    {
+      "key": "Full-Pay Effect",
+      "meaning": "Neu=neutral; Edge=helps admit odds; Rev=OOS full-pay revenue welcomed (publics)."
+    },
+    {
+      "key": "Merit",
+      "meaning": "N=none (aid need-only, full sticker); Ltd=limited/competitive; Y=meaningful merit possible."
+    },
+    {
+      "key": "COA/yr",
+      "meaning": "Approx full sticker cost of attendance; 'OOS'=non-resident public rate."
+    },
+    {
+      "key": "Preferred LoRs",
+      "meaning": "Sch=counselor/teacher; CEO=COEO internship; MS=Microsoft researcher (Dr. Abir). UC/CSU use no LoRs."
+    },
+    {
+      "key": "Round (Nov 1)",
+      "meaning": "ED/EA/REA/RD/rolling; UC & CSU due ~Nov 30 (no early round)."
+    },
+    {
+      "key": "IMPORTANT",
+      "meaning": "Approximate planning aid. Verify each school's official latest CDS, net-price calculator, deadlines, and test/merit policy."
+    },
+    {
+      "key": "Residency",
+      "meaning": "US citizen residing in India => non-CA-resident for UC/CSU (non-resident tuition, tougher OOS bar, little/no merit)."
+    },
+    {
+      "key": "Full-pay strategy",
+      "meaning": "No FAFSA/need aid. Check 'not applying for financial aid'. Use ED aggressively (zero financial risk). Chase merit only at Y schools."
+    }
+  ],
   "recommenders": [
-    { "name": "", "role": "School Counselor", "schools": "All schools", "method": "Common App", "requestSent": false, "materialsGiven": false, "reminderDate": "", "submitted": false, "thankYouSent": false, "notes": "Core academic letter" },
-    { "name": "", "role": "Teacher", "schools": "All schools", "method": "Common App", "requestSent": false, "materialsGiven": false, "reminderDate": "", "submitted": false, "thankYouSent": false, "notes": "Pick a subject relevant to your major" },
-    { "name": "", "role": "VC", "schools": "", "method": "Other recommender", "requestSent": false, "materialsGiven": false, "reminderDate": "", "submitted": false, "thankYouSent": false, "notes": "Check per-school extra-letter policy" },
-    { "name": "", "role": "Intern Manager", "schools": "", "method": "Other recommender", "requestSent": false, "materialsGiven": false, "reminderDate": "", "submitted": false, "thankYouSent": false, "notes": "Highlights real-world skills" },
-    { "name": "", "role": "Research Advisor", "schools": "", "method": "Other recommender", "requestSent": false, "materialsGiven": false, "reminderDate": "", "submitted": false, "thankYouSent": false, "notes": "Best for research-heavy programs" }
+    {
+      "name": "",
+      "role": "School Counselor",
+      "schools": "All schools",
+      "method": "Common App",
+      "requestSent": false,
+      "materialsGiven": false,
+      "reminderDate": "",
+      "submitted": false,
+      "thankYouSent": false,
+      "notes": "Core academic letter (Sch)"
+    },
+    {
+      "name": "",
+      "role": "Teacher",
+      "schools": "All schools",
+      "method": "Common App",
+      "requestSent": false,
+      "materialsGiven": false,
+      "reminderDate": "",
+      "submitted": false,
+      "thankYouSent": false,
+      "notes": "Pick a subject relevant to CS/quant"
+    },
+    {
+      "name": "",
+      "role": "VC",
+      "schools": "",
+      "method": "Other recommender",
+      "requestSent": false,
+      "materialsGiven": false,
+      "reminderDate": "",
+      "submitted": false,
+      "thankYouSent": false,
+      "notes": "Check per-school extra-letter policy"
+    },
+    {
+      "name": "",
+      "role": "Intern Manager (CEO)",
+      "schools": "",
+      "method": "Other recommender",
+      "requestSent": false,
+      "materialsGiven": false,
+      "reminderDate": "",
+      "submitted": false,
+      "thankYouSent": false,
+      "notes": "CEO/COEO internship letter"
+    },
+    {
+      "name": "Dr. Abir",
+      "role": "Research Advisor (Microsoft)",
+      "schools": "",
+      "method": "Other recommender",
+      "requestSent": false,
+      "materialsGiven": false,
+      "reminderDate": "",
+      "submitted": false,
+      "thankYouSent": false,
+      "notes": "MS researcher letter; best for research-heavy programs"
+    }
   ],
   "essays": [
-    { "essay": "Personal Statement", "school": "All (Common App)", "prompt": "Common App main essay", "wordLimit": 650, "status": "Not started", "due": "2026-10-15", "notes": "Rough draft first, then revise across passes" }
+    {
+      "essay": "Personal Statement",
+      "school": "All (Common App)",
+      "prompt": "Common App main essay",
+      "wordLimit": 650,
+      "status": "Not started",
+      "due": "2026-10-15",
+      "notes": "Rough draft first, then revise across passes"
+    }
   ],
   "weeklyPlan": [
-    { "week": "Week 1: Sep 28 – Oct 4", "focus": "Requests + shortlist", "tasks": "Send all 5 recommender requests with materials. Draft Reach/Target/Safety list.", "done": false },
-    { "week": "Week 2: Oct 5 – 11", "focus": "Lock list + Common App", "tasks": "Finalize schools & ED choice. Fill profile, activities, honors, testing.", "done": false },
-    { "week": "Week 3: Oct 12 – 18", "focus": "Essay draft", "tasks": "Rough personal-statement draft by ~Oct 15. Start supplements. Nudge recommenders.", "done": false },
-    { "week": "Week 4: Oct 19 – 25", "focus": "Revise", "tasks": "Revise personal statement across passes. Finish supplements. Confirm letters in.", "done": false },
-    { "week": "Week 5: Oct 26 – 31", "focus": "Review + submit", "tasks": "Proofread everything. Submit with buffer before Nov 1. Send thank-you notes.", "done": false }
+    {
+      "week": "Week 1: Sep 28 – Oct 4",
+      "focus": "Requests + shortlist",
+      "tasks": "Send all 5 recommender requests with materials. Confirm GT EA (Oct 15) items.",
+      "done": false
+    },
+    {
+      "week": "Week 2: Oct 5 – 11",
+      "focus": "Lock list + Common App",
+      "tasks": "Finalize ED I = UPenn M&T. Fill profile, activities, honors, testing. Georgia Tech EA due Oct 15.",
+      "done": false
+    },
+    {
+      "week": "Week 3: Oct 12 – 18",
+      "focus": "Essay draft + GT EA",
+      "tasks": "Submit Georgia Tech EA by Oct 15. Rough personal-statement draft. Start supplements.",
+      "done": false
+    },
+    {
+      "week": "Week 4: Oct 19 – 25",
+      "focus": "Revise",
+      "tasks": "Revise personal statement. Finish Nov 1 supplements (UPenn, MIT, Caltech, UChicago, UIUC, Michigan, USC, Northeastern, Purdue, Wisconsin, Ohio State).",
+      "done": false
+    },
+    {
+      "week": "Week 5: Oct 26 – 31",
+      "focus": "Review + submit Nov 1 batch",
+      "tasks": "Proofread. Submit ED I UPenn + all Nov 1 EA schools with buffer. Then prep UC/CSU (Nov 30) & RD.",
+      "done": false
+    }
   ]
 }

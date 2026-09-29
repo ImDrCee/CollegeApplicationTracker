@@ -33,7 +33,7 @@
   .tab.active { background:var(--blue); color:#fff; border-color:var(--blue); }
   .panel { display:none; }
   .panel.active { display:block; }
-  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow:hidden; }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:12px; overflow-x:auto; }
   table { width:100%; border-collapse:collapse; font-size:.9rem; }
   th { background:#f8fafc; text-align:left; padding:11px 12px; color:var(--grey);
        font-weight:600; border-bottom:1px solid var(--line); white-space:nowrap; }
@@ -57,6 +57,16 @@
   a { color:var(--blue); }
   .rule { background:#fffbeb; border:1px solid #fde68a; border-radius:10px; padding:14px 16px; margin-bottom:18px; font-size:.9rem; }
   .rule b { color:var(--navy); }
+  .strategy { background:#eff6ff; border:1px solid #bfdbfe; border-radius:10px; padding:14px 16px; margin-bottom:14px; font-size:.88rem; line-height:1.5; }
+  .strategy b { color:var(--navy); }
+  .strategy .kv { margin-top:8px; color:var(--grey); }
+  select.status-sel { font:inherit; padding:3px 6px; border:1px solid var(--line); border-radius:7px; background:#fff; }
+  .verified { color:var(--green); font-weight:600; }
+  .approx { color:var(--yellow); font-weight:600; }
+  details.legend { margin-top:14px; background:var(--card); border:1px solid var(--line); border-radius:12px; padding:12px 16px; }
+  details.legend summary { cursor:pointer; font-weight:600; color:var(--navy); }
+  details.legend td { font-size:.85rem; }
+  td.notes-cell { min-width:220px; }
 </style>
 </head>
 <body>
@@ -154,6 +164,8 @@ function renderStats(){
     </div>`).join("");
 }
 
+const UNI_STATUSES = ["Not started","In progress","Ready to submit","Submitted","Accepted","Waitlisted","Denied"];
+
 function renderUniversities(){
   const u = DATA.universities;
   if (!u.length){
@@ -165,23 +177,47 @@ function renderUniversities(){
       </div>`;
     return;
   }
-  const rows = u.map(x=>`
+  const rows = u.map((x,i)=>{
+    const st = ov("uni-"+i+"-status", x.status);
+    const dataBadge = /verif/i.test(x.data) ? `<span class="verified">✓ Verified</span>`
+                     : (x.data ? `<span class="approx">~ ${x.data}</span>` : "—");
+    const opts = UNI_STATUSES.map(s=>`<option ${s===st?"selected":""}>${s}</option>`).join("");
+    return `
     <tr>
-      <td><b>${x.name||"—"}</b></td>
+      <td>${x.n}</td>
+      <td><b>${x.university||"—"}</b><div class="muted">${x.program||""}</div></td>
       <td class="tier tier-${x.tier}">${x.tier||"—"}</td>
       <td>${x.plan||"—"}</td>
       <td>${x.deadline||"—"}</td>
-      <td>${x.appFee||"—"}</td>
-      <td>${x.suppEssays??"—"}</td>
-      <td>${x.recsAllowed||"—"}</td>
-      <td>${statusBadge(x.status)}</td>
-      <td class="muted">${x.notes||""}</td>
-    </tr>`).join("");
-  document.getElementById("c-universities").innerHTML = `
+      <td>${x.admit||"—"}</td>
+      <td>${x.sat||"—"}</td>
+      <td>${x.coa||"—"}</td>
+      <td>${dataBadge}</td>
+      <td>${statusBadge(st)}<br>
+        <select class="status-sel" onchange="setOv('uni-${i}-status',this.value)">${opts}</select></td>
+      <td class="muted notes-cell">${x.notes||""}</td>
+    </tr>`;
+  }).join("");
+
+  const m = DATA.meta || {};
+  const strat = m.strategy ? `
+    <div class="strategy">
+      <b>Strategy.</b> ${m.strategy}
+      ${m.balance?`<div class="kv"><b>Balance:</b> ${m.balance}</div>`:""}
+      ${m.topAction?`<div class="kv"><b>Top action:</b> ${m.topAction}</div>`:""}
+    </div>` : "";
+
+  const legend = (DATA.legend && DATA.legend.length) ? `
+    <details class="legend">
+      <summary>Legend &amp; notes (${DATA.legend.length})</summary>
+      <table><tbody>${DATA.legend.map(l=>`<tr><td><b>${l.key}</b></td><td>${l.meaning}</td></tr>`).join("")}</tbody></table>
+    </details>` : "";
+
+  document.getElementById("c-universities").innerHTML = strat + `
     <table><thead><tr>
-      <th>University</th><th>Tier</th><th>Plan</th><th>Deadline</th><th>Fee</th>
-      <th>Supp. Essays</th><th>Recs Allowed</th><th>Status</th><th>Notes</th>
-    </tr></thead><tbody>${rows}</tbody></table>`;
+      <th>#</th><th>University / Program</th><th>Tier</th><th>Round Plan</th><th>Deadline</th>
+      <th>Admit %</th><th>Mid-50 SAT</th><th>COA/yr</th><th>Data</th><th>Status</th><th>Role / why</th>
+    </tr></thead><tbody>${rows}</tbody></table>` + legend;
 }
 
 function renderRecommenders(){
