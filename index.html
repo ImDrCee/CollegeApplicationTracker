@@ -69,6 +69,7 @@
   td.notes-cell { min-width:220px; }
   tr.today > td { background:#fffbeb; }
   tr.past > td { opacity:.55; }
+  tr.detail-row > td { padding-top:0; padding-bottom:12px; border-bottom:2px solid var(--line); font-size:.82rem; line-height:1.5; }
 </style>
 </head>
 <body>
@@ -181,24 +182,35 @@ function renderUniversities(){
   }
   const rows = u.map((x,i)=>{
     const st = ov("uni-"+i+"-status", x.status);
-    const dataBadge = /verif/i.test(x.data) ? `<span class="verified">✓ Verified</span>`
-                     : (x.data ? `<span class="approx">~ ${x.data}</span>` : "—");
     const opts = UNI_STATUSES.map(s=>`<option ${s===st?"selected":""}>${s}</option>`).join("");
+    const testCls = /blind/i.test(x.testPolicy) ? "b-green" : (/opt/i.test(x.testPolicy) ? "b-yellow" : "b-grey");
+    const detail = [
+      x.whyTier ? `<b>Why ${x.tier}:</b> ${x.whyTier}` : "",
+      x.strengths ? `<b>Your strengths:</b> ${x.strengths}` : "",
+      x.push ? `<b>What to push:</b> ${x.push}` : "",
+      x.why ? `<b>Note:</b> ${x.why}` : "",
+      x.cdsFactors ? `<b>CDS factors:</b> ${x.cdsFactors}` : "",
+      x.bestFit ? `<b>Best-fit major:</b> ${x.bestFit}` : "",
+      (x.need||x.fullPay) ? `<b>Need/Full-pay:</b> ${x.need} · ${x.fullPay}` : "",
+    ].filter(Boolean).join(" &nbsp;•&nbsp; ");
     return `
     <tr>
       <td>${x.n}</td>
-      <td><b>${x.university||"—"}</b><div class="muted">${x.program||""}</div></td>
+      <td><b>${x.university||"—"}</b><div class="muted">${x.major||""}</div></td>
       <td class="tier tier-${x.tier}">${x.tier||"—"}</td>
-      <td>${x.plan||"—"}</td>
-      <td>${x.deadline||"—"}</td>
+      <td>${x.round||"—"}</td>
+      <td><b>${x.deadline||"—"}</b></td>
+      <td>${x.odds||"—"}</td>
+      <td>${x.score!==""&&x.score!=null?x.score:"—"}</td>
       <td>${x.admit||"—"}</td>
       <td>${x.sat||"—"}</td>
+      <td><span class="badge ${testCls}">${x.testPolicy||"—"}</span></td>
+      <td>${x.merit||"—"}</td>
+      <td>${x.lors||"—"}</td>
       <td>${x.coa||"—"}</td>
-      <td>${dataBadge}</td>
-      <td>${statusBadge(st)}<br>
-        <select class="status-sel" onchange="setOv('uni-${i}-status',this.value)">${opts}</select></td>
-      <td class="muted notes-cell">${x.notes||""}</td>
-    </tr>`;
+      <td><select class="status-sel" onchange="setOv('uni-${i}-status',this.value)">${opts}</select></td>
+    </tr>
+    <tr class="detail-row"><td></td><td colspan="13" class="muted">${detail}</td></tr>`;
   }).join("");
 
   const m = DATA.meta || {};
@@ -217,8 +229,9 @@ function renderUniversities(){
 
   document.getElementById("c-universities").innerHTML = strat + `
     <table><thead><tr>
-      <th>#</th><th>University / Program</th><th>Tier</th><th>Round Plan</th><th>Deadline</th>
-      <th>Admit %</th><th>Mid-50 SAT</th><th>COA/yr</th><th>Data</th><th>Status</th><th>Role / why</th>
+      <th>#</th><th>University / Major</th><th>Tier</th><th>Round</th><th>Deadline</th>
+      <th>Your Odds</th><th>Score</th><th>Admit %</th><th>Mid-50 SAT</th><th>Test</th>
+      <th>Merit</th><th>Pref. LoRs</th><th>COA/yr</th><th>Status</th>
     </tr></thead><tbody>${rows}</tbody></table>` + legend;
 }
 
