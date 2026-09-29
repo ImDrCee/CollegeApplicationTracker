@@ -67,6 +67,8 @@
   details.legend summary { cursor:pointer; font-weight:600; color:var(--navy); }
   details.legend td { font-size:.85rem; }
   td.notes-cell { min-width:220px; }
+  tr.today > td { background:#fffbeb; }
+  tr.past > td { opacity:.55; }
 </style>
 </head>
 <body>
@@ -89,7 +91,7 @@
     <div class="tab active" data-tab="universities">Universities</div>
     <div class="tab" data-tab="recommenders">Recommenders</div>
     <div class="tab" data-tab="essays">Essays</div>
-    <div class="tab" data-tab="plan">Weekly Plan</div>
+    <div class="tab" data-tab="plan">Daily Plan</div>
   </div>
 
   <div class="panel active" id="p-universities"><div class="card" id="c-universities"></div></div>
@@ -154,7 +156,7 @@ function renderStats(){
     {num: unis, lbl:"Universities on list"},
     {num: `${recSent}/${recs.length}`, lbl:"Recommender requests sent", pct: recSent/recs.length},
     {num: `${recDone}/${recs.length}`, lbl:"Letters submitted", pct: recDone/recs.length},
-    {num: `${planDone}/${plan.length}`, lbl:"Plan weeks done", pct: planDone/plan.length},
+    {num: `${planDone}/${plan.length}`, lbl:"Plan days done", pct: planDone/plan.length},
   ];
   document.getElementById("stats").innerHTML = cards.map(c=>`
     <div class="stat">
@@ -262,16 +264,31 @@ function renderEssays(){
 }
 
 function renderPlan(){
-  const rows = DATA.weeklyPlan.map((w,i)=>`
-    <tr>
-      <td><b>${w.week}</b></td>
+  const todayIso = new Date().toISOString().slice(0,10);
+  const rows = DATA.weeklyPlan.map((w,i)=>{
+    const label = w.date || w.week || "";
+    let dateCell = label, cls = "";
+    if (w.date){
+      const dt = new Date(w.date+"T00:00:00");
+      const nice = dt.toLocaleDateString(undefined,{weekday:"short",month:"short",day:"numeric"});
+      const isToday = w.date === todayIso;
+      const isPast = w.date < todayIso;
+      cls = isToday ? "today" : (isPast ? "past" : "");
+      dateCell = `<b>${nice}</b>${isToday?' <span class="badge b-yellow">Today</span>':''}`;
+    } else {
+      dateCell = `<b>${label}</b>`;
+    }
+    return `
+    <tr class="${cls}">
+      <td style="white-space:nowrap">${dateCell}</td>
       <td>${w.focus}</td>
       <td>${w.tasks}</td>
       <td><input type="checkbox" class="check" ${ov("plan-"+i+"-done",w.done)?"checked":""}
            onchange="setOv('plan-${i}-done',this.checked)"></td>
-    </tr>`).join("");
+    </tr>`;
+  }).join("");
   document.getElementById("c-plan").innerHTML = `
-    <table><thead><tr><th>Week</th><th>Focus</th><th>Key tasks</th><th>Done</th></tr></thead>
+    <table><thead><tr><th>Date</th><th>Focus</th><th>Tasks</th><th>Done</th></tr></thead>
     <tbody>${rows}</tbody></table>`;
 }
 

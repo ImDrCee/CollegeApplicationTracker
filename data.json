@@ -564,44 +564,434 @@
   ],
   "essays": [
     {
-      "essay": "Personal Statement",
-      "school": "All (Common App)",
-      "prompt": "Common App main essay",
+      "essay": "Common App Personal Statement",
+      "school": "All Common App schools",
+      "prompt": "Common App main essay (1 of 7 prompts)",
       "wordLimit": 650,
       "status": "Not started",
       "due": "2026-10-15",
-      "notes": "Rough draft first, then revise across passes"
+      "notes": "Write first — reused everywhere. Draft, then revise across passes."
+    },
+    {
+      "essay": "UC Personal Insight Questions",
+      "school": "All 6 UCs (one UC application)",
+      "prompt": "Answer 4 of 8 PIQs",
+      "wordLimit": "4 × 350",
+      "status": "Not started",
+      "due": "2026-11-30",
+      "notes": "Berkeley, UCLA, UCSD, Davis, Irvine, UCSB share these. No LoRs. Test-blind."
+    },
+    {
+      "essay": "CSU application (no essays)",
+      "school": "Cal Poly SLO, San Jose State",
+      "prompt": "Cal State Apply — no personal essay required",
+      "wordLimit": "—",
+      "status": "N/A",
+      "due": "2026-11-30",
+      "notes": "CSUs generally require no essays/LoRs. Verify Cal Poly SLO supplemental questions."
+    },
+    {
+      "essay": "MIT — supplemental essays",
+      "school": "MIT",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Nov 1, 2026",
+      "notes": "EA (non-binding) · EECS (6-3)"
+    },
+    {
+      "essay": "Stanford — supplemental essays",
+      "school": "Stanford",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Jan 5, 2027",
+      "notes": "RD · CS / Symbolic Systems"
+    },
+    {
+      "essay": "Caltech — supplemental essays",
+      "school": "Caltech",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Nov 1, 2026",
+      "notes": "EA (non-restrictive) · CS"
+    },
+    {
+      "essay": "Princeton — supplemental essays",
+      "school": "Princeton",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Jan 1, 2027",
+      "notes": "RD · ORFE"
+    },
+    {
+      "essay": "Harvard — supplemental essays",
+      "school": "Harvard",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Jan 1, 2027",
+      "notes": "RD · CS + Econ"
+    },
+    {
+      "essay": "UPenn — supplemental essays",
+      "school": "UPenn",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Nov 1, 2026",
+      "notes": "ED I (binding) · M&T (Wharton+SEAS)"
+    },
+    {
+      "essay": "Columbia — supplemental essays",
+      "school": "Columbia",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Jan 1, 2027",
+      "notes": "RD · CS + Econ"
+    },
+    {
+      "essay": "Cornell — supplemental essays",
+      "school": "Cornell",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Jan 2, 2027",
+      "notes": "RD (ED alt) · ORIE / CS"
+    },
+    {
+      "essay": "UChicago — supplemental essays",
+      "school": "UChicago",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Nov 1, 2026",
+      "notes": "EA (non-binding) · Econ + CS"
+    },
+    {
+      "essay": "CMU — supplemental essays",
+      "school": "CMU",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Jan 3, 2027",
+      "notes": "RD (ED if retake) · SCS / CS+Business"
+    },
+    {
+      "essay": "Georgia Tech — supplemental essays",
+      "school": "Georgia Tech",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Oct 15, 2026",
+      "notes": "EA · CS / Quant&Comp Finance"
+    },
+    {
+      "essay": "UIUC — supplemental essays",
+      "school": "UIUC",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Nov 1, 2026",
+      "notes": "EA · CS+Econ / CS+X"
+    },
+    {
+      "essay": "U Michigan — supplemental essays",
+      "school": "U Michigan",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Nov 1, 2026",
+      "notes": "EA · CS"
+    },
+    {
+      "essay": "USC — supplemental essays",
+      "school": "USC",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Nov 1, 2026",
+      "notes": "EA (scholarship) · CS / Iovine & Young"
+    },
+    {
+      "essay": "NYU — supplemental essays",
+      "school": "NYU",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Jan 1, 2027",
+      "notes": "ED II (binding) · Business + CS (Stern x Tandon)"
+    },
+    {
+      "essay": "Northeastern — supplemental essays",
+      "school": "Northeastern",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Nov 1, 2026",
+      "notes": "EA · CS (co-op)"
+    },
+    {
+      "essay": "UW-Seattle — supplemental essays",
+      "school": "UW-Seattle",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Nov 15, 2026",
+      "notes": "RD · CS (Allen)"
+    },
+    {
+      "essay": "Purdue — supplemental essays",
+      "school": "Purdue",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Nov 1, 2026",
+      "notes": "EA · CS"
+    },
+    {
+      "essay": "Wisconsin — supplemental essays",
+      "school": "Wisconsin",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Nov 1, 2026",
+      "notes": "EA · CS"
+    },
+    {
+      "essay": "Ohio State (Honors) — supplemental essays",
+      "school": "Ohio State (Honors)",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "Nov 1, 2026",
+      "notes": "EA (scholarship) · CS"
+    },
+    {
+      "essay": "ASU (Barrett) — supplemental essays",
+      "school": "ASU (Barrett)",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "ASAP (rolling)",
+      "notes": "Rolling · CS"
+    },
+    {
+      "essay": "U Alabama — supplemental essays",
+      "school": "U Alabama",
+      "prompt": "Verify # and prompts on the app portal",
+      "wordLimit": "varies",
+      "status": "Not started",
+      "due": "ASAP (rolling)",
+      "notes": "Rolling · CS"
     }
   ],
   "weeklyPlan": [
     {
-      "week": "Week 1: Sep 28 – Oct 4",
-      "focus": "Requests + shortlist",
-      "tasks": "Send all 5 recommender requests with materials. Confirm GT EA (Oct 15) items.",
+      "date": "2026-09-29",
+      "focus": "Recommenders + setup",
+      "tasks": "Email all 5 recommenders TODAY with resume + brag-sheet bullets + deadlines (counselor, teacher, VC, CEO intern mgr, Dr. Abir). Add them in Common App.",
       "done": false
     },
     {
-      "week": "Week 2: Oct 5 – 11",
-      "focus": "Lock list + Common App",
-      "tasks": "Finalize ED I = UPenn M&T. Fill profile, activities, honors, testing. Georgia Tech EA due Oct 15.",
+      "date": "2026-09-30",
+      "focus": "Common App account",
+      "tasks": "Create/complete Common App profile, education, family, demographics. Start UC application account too.",
       "done": false
     },
     {
-      "week": "Week 3: Oct 12 – 18",
-      "focus": "Essay draft + GT EA",
-      "tasks": "Submit Georgia Tech EA by Oct 15. Rough personal-statement draft. Start supplements.",
+      "date": "2026-10-01",
+      "focus": "Activities list",
+      "tasks": "Draft all 10 Common App activities (150 chars each) + honors. Reuse for UC.",
       "done": false
     },
     {
-      "week": "Week 4: Oct 19 – 25",
-      "focus": "Revise",
-      "tasks": "Revise personal statement. Finish Nov 1 supplements (UPenn, MIT, Caltech, UChicago, UIUC, Michigan, USC, Northeastern, Purdue, Wisconsin, Ohio State).",
+      "date": "2026-10-02",
+      "focus": "Testing + logistics",
+      "tasks": "Enter test scores/plan. Confirm which schools are test-required vs blind. Register SAT retake if aiming 1500+.",
       "done": false
     },
     {
-      "week": "Week 5: Oct 26 – 31",
-      "focus": "Review + submit Nov 1 batch",
-      "tasks": "Proofread. Submit ED I UPenn + all Nov 1 EA schools with buffer. Then prep UC/CSU (Nov 30) & RD.",
+      "date": "2026-10-03",
+      "focus": "Personal statement — brainstorm",
+      "tasks": "Pick Common App prompt. Outline 2 story ideas. Choose the strongest.",
+      "done": false
+    },
+    {
+      "date": "2026-10-04",
+      "focus": "Personal statement — draft 1",
+      "tasks": "Write a full rough draft (don't edit yet). Aim ~650 words.",
+      "done": false
+    },
+    {
+      "date": "2026-10-05",
+      "focus": "Georgia Tech EA (due Oct 15)",
+      "tasks": "Start GT supplement essays. Review GT-specific questions.",
+      "done": false
+    },
+    {
+      "date": "2026-10-06",
+      "focus": "Personal statement — revise",
+      "tasks": "Second pass: structure, hook, ending. Cut clichés.",
+      "done": false
+    },
+    {
+      "date": "2026-10-07",
+      "focus": "GT supplement draft",
+      "tasks": "Draft Georgia Tech short answers. Nudge recommenders if not confirmed.",
+      "done": false
+    },
+    {
+      "date": "2026-10-08",
+      "focus": "Personal statement — revise",
+      "tasks": "Third pass: voice + specificity. Get one peer/mentor read.",
+      "done": false
+    },
+    {
+      "date": "2026-10-09",
+      "focus": "GT finalize",
+      "tasks": "Polish GT essays. Verify GT app sections complete.",
+      "done": false
+    },
+    {
+      "date": "2026-10-10",
+      "focus": "UPenn M&T (ED I) — essays",
+      "tasks": "Start UPenn + M&T essays (your primary ED). Review prompts.",
+      "done": false
+    },
+    {
+      "date": "2026-10-11",
+      "focus": "Nov 1 EA batch — map essays",
+      "tasks": "List every supplement due Nov 1 (MIT, Caltech, UChicago, UIUC, Michigan, USC, Northeastern, Purdue, Wisconsin, Ohio State) and their prompts.",
+      "done": false
+    },
+    {
+      "date": "2026-10-12",
+      "focus": "UPenn essays — draft",
+      "tasks": "Draft M&T 'why' + business/engineering essays.",
+      "done": false
+    },
+    {
+      "date": "2026-10-13",
+      "focus": "MIT + Caltech essays",
+      "tasks": "Draft MIT short answers and Caltech STEM essays.",
+      "done": false
+    },
+    {
+      "date": "2026-10-14",
+      "focus": "GT final review",
+      "tasks": "Final proofread Georgia Tech. Confirm recommenders submitted for GT.",
+      "done": false
+    },
+    {
+      "date": "2026-10-15",
+      "focus": "🎯 SUBMIT Georgia Tech EA",
+      "tasks": "Submit GT today. Then start UChicago's creative prompt.",
+      "done": false
+    },
+    {
+      "date": "2026-10-16",
+      "focus": "UChicago + UIUC",
+      "tasks": "Draft UChicago uncommon essay + UIUC CS+X essays.",
+      "done": false
+    },
+    {
+      "date": "2026-10-17",
+      "focus": "Michigan + USC",
+      "tasks": "Draft Michigan community essay + USC/I&Y short answers.",
+      "done": false
+    },
+    {
+      "date": "2026-10-18",
+      "focus": "Northeastern + Purdue",
+      "tasks": "Draft Northeastern + Purdue supplements.",
+      "done": false
+    },
+    {
+      "date": "2026-10-19",
+      "focus": "Wisconsin + Ohio State",
+      "tasks": "Draft Wisconsin + Ohio State (Honors/scholarship) essays.",
+      "done": false
+    },
+    {
+      "date": "2026-10-20",
+      "focus": "UPenn — revise",
+      "tasks": "Revise all UPenn/M&T essays. This is your biggest ED bet.",
+      "done": false
+    },
+    {
+      "date": "2026-10-21",
+      "focus": "Personal statement — finalize",
+      "tasks": "Lock the Common App personal statement. Final proofread.",
+      "done": false
+    },
+    {
+      "date": "2026-10-22",
+      "focus": "Revise Nov 1 batch (1/2)",
+      "tasks": "Revise MIT, Caltech, UChicago, UIUC, Michigan supplements.",
+      "done": false
+    },
+    {
+      "date": "2026-10-23",
+      "focus": "Revise Nov 1 batch (2/2)",
+      "tasks": "Revise USC, Northeastern, Purdue, Wisconsin, Ohio State supplements.",
+      "done": false
+    },
+    {
+      "date": "2026-10-24",
+      "focus": "Recommenders check",
+      "tasks": "Confirm ALL letters are submitted/assigned for ED I + Nov 1 schools. Send reminders.",
+      "done": false
+    },
+    {
+      "date": "2026-10-25",
+      "focus": "UPenn ED — final review",
+      "tasks": "Full review of UPenn M&T application. Verify ED agreement signed.",
+      "done": false
+    },
+    {
+      "date": "2026-10-26",
+      "focus": "Proofread day 1",
+      "tasks": "Proofread UPenn, MIT, Caltech, UChicago end-to-end.",
+      "done": false
+    },
+    {
+      "date": "2026-10-27",
+      "focus": "Proofread day 2",
+      "tasks": "Proofread UIUC, Michigan, USC, Northeastern.",
+      "done": false
+    },
+    {
+      "date": "2026-10-28",
+      "focus": "Proofread day 3",
+      "tasks": "Proofread Purdue, Wisconsin, Ohio State. Verify fees/waivers.",
+      "done": false
+    },
+    {
+      "date": "2026-10-29",
+      "focus": "🎯 SUBMIT UPenn ED I",
+      "tasks": "Submit UPenn M&T (ED I) today — with buffer. Double-check everything.",
+      "done": false
+    },
+    {
+      "date": "2026-10-30",
+      "focus": "🎯 SUBMIT Nov 1 EA batch",
+      "tasks": "Submit MIT, Caltech, UChicago, UIUC, Michigan, USC, Northeastern, Purdue, Wisconsin, Ohio State.",
+      "done": false
+    },
+    {
+      "date": "2026-10-31",
+      "focus": "Buffer + confirmations",
+      "tasks": "Fix any portal issues. Save confirmation PDFs. Send thank-you notes to recommenders.",
+      "done": false
+    },
+    {
+      "date": "2026-11-01",
+      "focus": "🎯 Nov 1 deadline",
+      "tasks": "Final safety check that all Nov 1 apps show 'submitted'. Then pivot to UC/CSU (Nov 30) & RD schools.",
       "done": false
     }
   ]
